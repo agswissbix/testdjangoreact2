@@ -51,9 +51,5 @@ def check_session(request):
 @login_required
 def home_view(request):
     """Una vista protetta, accessibile solo agli utenti autenticati."""
-    
-    
-    # Ottieni il token inviato nella richiesta
-    received_token =  request.headers.get('X-CSRFToken')
-    print('received_token: '+received_token)
-    return JsonResponse({"message": "You have access to this protected resource"})
+    nomeutente='Marco'
+    return JsonResponse({"username": nomeutente})
