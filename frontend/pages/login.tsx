@@ -2,8 +2,8 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import axiosInstance from '../utils/axios';
-import '../app/globals.css';
 import Image from 'next/image';
+import '../app/globals.css';
 
 const Login = () => {
     const [username, setUsername] = useState('');
